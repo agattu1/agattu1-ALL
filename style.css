@@ -10,8 +10,8 @@ body {
     text-align: center;
     top: 40%;
     width: 100%;
-    line-height: 1.2em; /* Adjusted for better readability */
-    z-index: 2; /* Ensures it appears over the background */
+    line-height: 1.2em; 
+    z-index: 2; 
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-size: 26px;
     font-family: "Roboto";
-    margin: 0; /* Removed extra spacing */
+    margin: 0; 
 }
 
 #typing-effect {
@@ -35,7 +35,7 @@ h2 {
     margin-left: 2px;
     opacity: 1;
     animation: blink-caret 0.75s infinite;
-    color: #fff; /* Cursor color */
+    color: #fff; 
 }
 
 @keyframes blink-caret {
@@ -47,7 +47,7 @@ h2 {
     }
 }
 
-/* Particles background setup */
+/* Particles ! setup */
 #particles-js {
     background-image: url('image1.jpg');
     height: 100vh;
@@ -76,7 +76,6 @@ h2 {
     filter: grayscale(100%);
 }
 
-/* About me section styling */
 .about-me-section {
     background-color: #000000;
     position: relative;
@@ -85,7 +84,7 @@ h2 {
 }
 
 .about-me-content {
-    max-width: 800px; /* Increased width to accommodate image and text */
+    max-width: 800px; /* more width 4 image & text */
     margin: 0 auto;
     text-align: left;
     color: #f8f8f2;
@@ -145,7 +144,7 @@ h2 {
     margin-top: 20px;
 }
 
-/* Expertise section styling */
+
 .expertise-wrapper {
     display: flex;
     align-items: center;
@@ -155,7 +154,7 @@ h2 {
     width: 300px;
     height: 250px;
     border-radius: 50%;
-    margin-right: 20px; /* Adds space between the image and the text */
+    margin-right: 20px; 
 }
 
 .expertise-text {
