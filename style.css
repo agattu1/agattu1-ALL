@@ -10,8 +10,8 @@ body {
     text-align: center;
     top: 40%;
     width: 100%;
-    line-height: 1.2em; /* Adjusted line-height for better readability */
-    z-index: 2; /* Ensure it appears over the background */
+    line-height: 1.2em; /* This is to adjust line-height for better readability */
+    z-index: 2; /* Make sure it appears over the background */
 }
 
 h1 {
@@ -22,12 +22,12 @@ h1 {
 h2 {
     font-size: 26px;
     font-family: "Roboto";
-    margin: 0; /* Ensures no extra spacing */
+    margin: 0; /* NO for extra spacing for me */
 }
 
 #typing-effect {
     display: inline-block;
-    color: #f9f3f4; /* Ensure the color is visible */
+    color: #f9f3f4; /* I pick this color */
 }
 
 #typing-effect::after {
@@ -35,7 +35,7 @@ h2 {
     margin-left: 2px;
     opacity: 1;
     animation: blink-caret 0.75s infinite;
-    color: #fff; /* Cursor color */
+    color: #fff; /* I pick this cursor color */
 }
 
 @keyframes blink-caret {
