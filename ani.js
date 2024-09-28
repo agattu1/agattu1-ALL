@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const headingElement = document.getElementById('typing-effect');
-    const texts = ['🔺 engineer', '⚽️ athlete', '☁ believer']; // Array of texts to display
-    let textIndex = 0;  // Which text is currently being typed
-    let charIndex = 0;  // Which character within that text is currently being typed
+    const texts = ['🔺 engineer', '⚽️ athlete', '☁ believer'];
+    let textIndex = 0;  //txt typing rn
+    let charIndex = 0;  //char in that txt which is typing rn
 
     function typeText() {
         if (charIndex < texts[textIndex].length) {
             headingElement.textContent += texts[textIndex].charAt(charIndex);
             charIndex++;
-            setTimeout(typeText, 100);  // Typing speed
+            setTimeout(typeText, 100);  // Typing speed which can be adjusted to whatver I want
         } else {
-            setTimeout(eraseText, 1000);  // Delay before erasing
+            setTimeout(eraseText, 1000);  // Delay b4 you erase, reminds me of ECE2035 game I made lol
         }
     }
 
@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
             charIndex--;
             setTimeout(eraseText, 50);  // Erasing speed
         } else {
-            textIndex = (textIndex + 1) % texts.length;  // Move to next text, loop back to start
-            setTimeout(typeText, 500);  // Delay before starting to type the next text
+            textIndex = (textIndex + 1) % texts.length;  // Basically this move to next text in the array and if that is done, just loop back to start
+            setTimeout(typeText, 500);  // Hold on a sec b4 you type the next word in array 
         }
     }
 
-    // Initialize the typing effect
+    //Bring the action ... (Race Gurram)
     typeText();
 });
