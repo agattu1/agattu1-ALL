@@ -1,5 +1,4 @@
-/* CSS */
-body{
+body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -11,93 +10,96 @@ body{
     text-align: center;
     top: 40%;
     width: 100%;
-    line-height: 0.4em;
-  }
-  
+    line-height: 1.2em; /* Adjusted line-height for better readability */
+    z-index: 2; /* Ensure it appears over the background */
+}
+
 h1 {
-font-size: 51px;
-font-family: "Segoe UI";
+    font-size: 51px;
+    font-family: "Segoe UI";
 }
 
 h2 {
-font-size: 26px;
-font-family: "Roboto";
+    font-size: 26px;
+    font-family: "Roboto";
+    margin: 0; /* Ensures no extra spacing */
 }
 
 #typing-effect {
-display: inline-block;
+    display: inline-block;
+    color: #f9f3f4; /* Ensure the color is visible */
 }
 
 #typing-effect::after {
-content: "|";
-margin-left: 2px;
-opacity: 1;
-animation: blink-caret 0.75s infinite;
-color: #fff; /* Cursor color - set to white (#fff) for black background */
+    content: "|";
+    margin-left: 2px;
+    opacity: 1;
+    animation: blink-caret 0.75s infinite;
+    color: #fff; /* Cursor color */
 }
 
 @keyframes blink-caret {
-from, to {
-    opacity: 1;
-}
-50% {
-    opacity: 0;
-}
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
+/* Particles background setup */
 #particles-js {
-background-image: url('image1.jpg');
-height: 100vh;
-/* height: 100vh; */
+    background-image: url('image1.jpg');
+    height: 100vh;
 }
 
+/* Social icons positioning */
 .social-icons {
-  position: fixed;
-  top: 20px; /* Adjust the desired top position */
-  right: 20px; /* Adjust the desired right position */
-  z-index: 1;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
 }
 
 .social-icons a {
-  display: block;
-  margin: 5px auto;
-  width: fit-content; /* Limit the width to fit the content */
+    display: block;
+    margin: 5px auto;
+    width: fit-content;
 }
 
 .social-icons i {
-  color: #fff;
-  font-size: 30px;
+    color: #fff;
+    font-size: 30px;
 }
 
 .logo {
-  width: 30px; /* Adjust the width of MERIT page to match the size of other icons */
-  filter: grayscale(100%); /* Converts the image to black and white */
+    width: 30px;
+    filter: grayscale(100%);
 }
 
-
-
+/* About me section styling */
 .about-me-section {
-    background-color: #000000; /* Dark background color */
+    background-color: #000000;
     position: relative;
     padding: 80px 0;
-    border: 1px solid #ffffff; /* Add a white border */
-  }
-  
-  .about-me-content {
+    border: 1px solid #ffffff;
+}
+
+.about-me-content {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
-    color: #f8f8f2; /* Text color set to light */
+    color: #f8f8f2;
     font-family: 'Courier New', monospace;
-    white-space: pre-line; /* Preserve line breaks */
+    white-space: pre-line;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-  }
-  
-  .about-me-content::before {
+}
+
+.about-me-content::before {
     content: "";
     position: absolute;
     top: 0;
@@ -108,39 +110,34 @@ height: 100vh;
     opacity: 0.5;
     transform: skewX(-10deg);
     animation: shining 2s infinite linear;
-  }
-  
-  @keyframes shining {
+}
+
+@keyframes shining {
     0% {
-      left: -100%;
+        left: -100%;
     }
     50% {
-      left: 100%;
+        left: 100%;
     }
     100% {
-      left: 100%;
+        left: 100%;
     }
-  }
-  
-  .about-me-content h2 {
+}
+
+.about-me-content h2 {
     font-size: 24px;
-    color: #f50000; /* Heading color */
+    color: #f50000;
     margin-bottom: 20px;
-  }
-  
-  .about-me-content p {
+}
+
+.about-me-content p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
-  }
-  
-  .about-me-content button {
+}
+
+.about-me-content button {
     background-color: #f8f8f2;
     color: #272822;
     padding: 10px 20px;
-    border: red;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
+    border:
