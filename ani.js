@@ -2,7 +2,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 window.onload = function() {
     const headingElement = document.getElementById('typing-effect');
-    const texts = ['🔺 engineer', '⚽️ athlete', '☁ believer']; // Texts to display
+    const texts = ["🔺 engineer", "⚽️ athlete", "☁ believer"]; // Texts to display
     let textIndex = 0;
     let charIndex = 0;
 
