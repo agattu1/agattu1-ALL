@@ -47,16 +47,12 @@ h2 {
     }
 }
 
+/* Particles background setup */
 #particles-js {
-    position: absolute; /* Make it absolutely positioned */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Cover the full width */
-    height: 100%; /* Cover the full height */
-    z-index: 0; /* Lower than the content */
+    background-image: url('image1.jpg');
+    height: 100vh;
 }
 
-/* Social icons positioning */
 .social-icons {
     position: fixed;
     top: 20px;
