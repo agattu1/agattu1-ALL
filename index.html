@@ -11,9 +11,8 @@
 <body>
     <div id="particles-js"></div>
     <div class="MainHeading">
-        <h1>ANIRUDH GATTU</h2>
-        <h2><span id="typing-effect"></span></h1>
-        
+        <h1>ANIRUDH GATTU</h1> <!-- Fixed this tag (it was incorrectly closed with </h2>) -->
+        <h2><span id="typing-effect"></span></h2> <!-- Fixed closing tag -->
     </div>
 
     <div class="social-icons">
@@ -22,63 +21,39 @@
         <a href="https://medium.com/@anirudh1" target="_blank"><i class="fab fa-medium"></i></a>
         <a href="https://youtube.com/@anirudh.g" target="https://youtube.com/@anirudh.g"><i class="fab fa-youtube"></i></a>
         <a href="https://github.com/agattu1" target="https://github.com/agattu1"><i class="fab fa-github"></i></a>
-      </div>
-
-      
-      
-
-
-    <div id="about-me" class="about-me-section">
-   
-      <div class="about-me-content">
-        <h2>Mé Expértise.. </h2>
-        <p>Apppreciate you visiting my page. Currently attempting to gain maximum exposure to state of art technologies & software from internships and my institute. Proactive in self-growth, engineering without boundaries, and setting up a foundation for the future. Sometimes, I just engineer for the fun of it. Also, all of my projects are hosted on GitHub.</p>
-        <button onclick="redirectToRandomPage()">Learn More</button>
-      </div>
-        <!-- The matrix generator: data height is the height of the box , and the style height is the height of the generated matrix gif -->
-      <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="WxrjOq" data-editable="true" data-user="perbyhring" style="height: 430; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/perbyhring/pen/WxrjOq">
-        The Matrix GIF Maker</a> by Per Byhring (<a href="https://codepen.io/perbyhring">@perbyhring</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
     </div>
 
-    
+    <div id="about-me" class="about-me-section">
+        <div class="about-me-content">
+            <h2>Mé Expértise.. </h2>
+            <p>Appreciate you visiting my page. Currently attempting to gain maximum exposure to state of art technologies & software from internships and my institute. Proactive in self-growth, engineering without boundaries, and setting up a foundation for the future. Sometimes, I just engineer for the fun of it. Also, all of my projects are hosted on GitHub.</p>
+            <button onclick="redirectToRandomPage()">Learn More</button>
+        </div>
+        <!-- The matrix generator -->
+        <p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="WxrjOq" data-editable="true" data-user="perbyhring" style="height: 430; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/perbyhring/pen/WxrjOq">The Matrix GIF Maker</a> by Per Byhring (<a href="https://codepen.io/perbyhring">@perbyhring</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </div>
 
-    <!-- <script>
-        function scrollToSection(selector) {
-          document.querySelector(selector).scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      </script> -->
-
-      <script>
+    <script>
         function redirectToRandomPage() {
-          var urls = [
-            "https://github.com/agattu1",
-            "https://meritpages.com/agattu"
-          ];
-          var randomIndex = Math.floor(Math.random() * urls.length);
-          window.location.href = urls[randomIndex];
+            var urls = [
+                "https://github.com/agattu1",
+                "https://meritpages.com/agattu"
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
         }
-      </script>
-    
-    
+    </script>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.json loaded...');
+        });
+    </script>
 
-<script>
-    particlesJS.load('particles-js' , 'particles.json' , function () {
-        console.log('particles.json loaded...')
-    })
-</script>
-<script src="ani.js" defer></script>
-
-
-
-
-
+    <script src="ani.js" defer></script> <!-- Ensure this is after other scripts to load properly -->
 </body>
 </html>
